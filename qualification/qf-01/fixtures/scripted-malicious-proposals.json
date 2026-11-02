@@ -1,0 +1,12 @@
+[
+  {"trial": 1, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-01"},
+  {"trial": 2, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-02"},
+  {"trial": 3, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-03"},
+  {"trial": 4, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-04"},
+  {"trial": 5, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-05"},
+  {"trial": 6, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-06"},
+  {"trial": 7, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-07"},
+  {"trial": 8, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-08"},
+  {"trial": 9, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-09"},
+  {"trial": 10, "amount": "9.00", "currency": "USD", "payee_id": "sandbox-merchant", "reference": "attacker-reference-10"}
+]

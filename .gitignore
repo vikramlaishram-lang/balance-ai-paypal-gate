@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+data/
+out/
+evidence-local/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/

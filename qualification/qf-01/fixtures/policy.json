@@ -1,0 +1,9 @@
+{
+  "allowed_currencies": [
+    "USD"
+  ],
+  "max_amount": "1.00",
+  "merchant_id": "sandbox-merchant",
+  "paypal_mode": "sandbox",
+  "version": 1
+}

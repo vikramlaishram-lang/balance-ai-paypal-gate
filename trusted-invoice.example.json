@@ -1,0 +1,8 @@
+{
+  "amount": "1.00",
+  "currency": "USD",
+  "invoice_id": "trusted-invoice-demo-001",
+  "merchant_id": "REPLACE_WITH_SANDBOX_MERCHANT_ID",
+  "operation": "PAYPAL_CAPTURE_ORDER",
+  "reference": "merchant-invoice-demo-001"
+}

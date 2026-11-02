@@ -1,0 +1,51 @@
+{
+  "candidate": "Balance-Gate-PayPal-Hackathon-Candidate-v0.2",
+  "classification": "LIVE_PAYPAL_SANDBOX_AND_LOCAL_QWEN_EVIDENCE",
+  "recorded_date": "2026-10-25",
+  "paypal_environment": "SANDBOX",
+  "real_money": false,
+  "credentials_recorded": false,
+  "mission_id": "REDACTED_FOR_PUBLIC_RELEASE",
+  "paypal_order_id": "REDACTED_FOR_PUBLIC_RELEASE",
+  "paypal_capture_id": "REDACTED_FOR_PUBLIC_RELEASE",
+  "amount": "1.00",
+  "currency": "USD",
+  "agent": {
+    "provider": "OLLAMA_LOCAL",
+    "model": "qwen3:8b",
+    "proposal_authority": "NONE",
+    "proposal_effect": "NONE",
+    "recovery_recommendation": "RECONCILE",
+    "recommendation_permission": false,
+    "recommendation_dispatch": "NOT_DISPATCHED"
+  },
+  "gate": {
+    "capture_barrier_committed_before_dispatch": true,
+    "state_after_dropped_confirmation": "OUTCOME_UNKNOWN",
+    "capture_reentry_dispatch": "NOT_DISPATCHED",
+    "final_state": "COMPLETED",
+    "outcome_basis": "PAYPAL_GET_COMPLETED_CAPTURE"
+  },
+  "executor": {
+    "wrong_digest_token_refused": true,
+    "wrong_digest_dispatch": "NOT_DISPATCHED",
+    "provider_call_attempted_for_wrong_digest": false
+  },
+  "provider_evidence": {
+    "create_paypal_date": "Sun, 25 Oct 2026 10:44:34 GMT",
+    "capture_paypal_date": "Sun, 25 Oct 2026 11:12:11 GMT",
+    "final_get_paypal_date": "Sun, 25 Oct 2026 11:28:04 GMT"
+  },
+  "journal": {
+    "event_count": 16,
+    "chain_valid": true,
+    "anchor_matches": true,
+    "terminal_head_hash": "156c8c66f26774d469d0cc212aa09344dd3ccc3667853d2b38acf88b2094ee05"
+  },
+  "notes": [
+    "The capture response was intentionally discarded after the Sandbox provider effect.",
+    "The capture response was not treated as outcome evidence.",
+    "The final outcome and capture ID were established by GET of the original order.",
+    "A temporary local Executor outage produced HOLD_FOR_REVIEW with no capture attempt; the GET was safely repeated after restart."
+  ]
+}

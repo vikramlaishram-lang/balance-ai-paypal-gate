@@ -1,0 +1,82 @@
+{
+  "verdict": "SUPPLEMENTARY_V051_OBSERVED_EXECUTOR_LOCAL_PASS",
+  "limitations": "Fixture provider, credential-free, local files same OS account; not real PayPal egress. No Gate refusal A-H retest, no B full-predicate proof. QF-01 unchanged INCONCLUSIVE.",
+  "collector_pid": 19812,
+  "runner_pid": 17916,
+  "cases": [
+    {
+      "name": "invalid-token-negative",
+      "counts": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "ingress": 1,
+        "refused": 1
+      }
+    },
+    {
+      "name": "positive-fixture-create-get",
+      "counts": {
+        "capture": 0,
+        "create": 1,
+        "get": 1,
+        "ingress": 2,
+        "refused": 0
+      }
+    },
+    {
+      "name": "stale-collector-window-refusal",
+      "counts": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "ingress": 0,
+        "refused": 0
+      }
+    },
+    {
+      "name": "no-executor-request",
+      "counts": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "ingress": 0,
+        "refused": 0
+      }
+    }
+  ],
+  "replay": {
+    "rows": 18,
+    "head_sha256": "68f5c39c026effe5ca8769b5f6122b7a1c2c4d803120f381832494333ea0cc36",
+    "windows": [
+      {
+        "id": "a46bc70df1d84a4aa2957a170bcd824b",
+        "name": "invalid-token-negative",
+        "events": 2,
+        "dispatch": 0,
+        "ingress": 1
+      },
+      {
+        "id": "587003c6a7724f9896ebe976cad3ba24",
+        "name": "positive-fixture-create-get",
+        "events": 8,
+        "dispatch": 2,
+        "ingress": 2
+      },
+      {
+        "id": "893f8e31d1b74c77ab2b1f5f40b30924",
+        "name": "stale-collector-window-refusal",
+        "events": 0,
+        "dispatch": 0,
+        "ingress": 0
+      },
+      {
+        "id": "19ebc2367cd44fef9962fc8c0e2e0f96",
+        "name": "no-executor-request",
+        "events": 0,
+        "dispatch": 0,
+        "ingress": 0
+      }
+    ]
+  }
+}

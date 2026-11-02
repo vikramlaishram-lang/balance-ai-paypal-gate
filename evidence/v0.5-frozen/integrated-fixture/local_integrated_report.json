@@ -1,0 +1,412 @@
+{
+  "binding": {
+    "binding_sha256": "12014537e979f7b52196d0beb716cb183840e76ef6fa8fba53274021e198706b",
+    "candidate_aggregate_sha256": "ba432ab8b7b38a522d8fd2c2c3f65920f63cea0ef8ce6f669df8d5762cf9649c",
+    "contract_sha256": "b365df35ac73b9ffe8445b53da24c7c872202ee2859783564a261dc2979e7ea0",
+    "contract_verified_locally": false,
+    "manifest_files": 48
+  },
+  "cases": [
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:48.125+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "refusals": 1,
+        "requests": 1
+      },
+      "name": "EXECUTOR_INVALID_TOKEN_CONTROL",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "8bef66274965427dba7f9a8caa7b5b3c",
+        "refusals": 1,
+        "requests": 1
+      },
+      "started_utc": "2026-11-02T11:53:48.003+00:00",
+      "test_observation": {
+        "http_status": 403,
+        "token_refused": true
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:48.311+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "A_INVOICE_MISMATCH",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "5cc8145999a041b18ed88821db5adb52",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:48.205+00:00",
+      "test_observation": {
+        "admissibility": "REJECTED",
+        "reason": "TRUSTED_INVOICE_MISMATCH"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:48.834+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 1,
+        "create": 1,
+        "get": 1,
+        "requests": 3
+      },
+      "name": "POSITIVE_FIXTURE_ORIGINAL_CAPTURE_LOST",
+      "observed_collector": {
+        "capture": 1,
+        "create": 1,
+        "get": 1,
+        "id": "f8c21e3d7254460eb2157ee5d4f869ed",
+        "refusals": 0,
+        "requests": 3
+      },
+      "started_utc": "2026-11-02T11:53:48.364+00:00",
+      "test_observation": {
+        "mission_id": "c8244064-7654-4a52-8c9e-2023d0608010",
+        "order_id": "FIXTURE-ORDER-0001",
+        "status": "OUTCOME_UNKNOWN"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.039+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "B_UNKNOWN_LOCKED_NEW_MISSION",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "b23ba3a498b6422d81b8b0a9000fef5f",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:48.906+00:00",
+      "test_observation": {
+        "NOTE": "B full QF-01 approval-validity predicate not established by admission path",
+        "non_lock_checks": {
+          "amount_matches_invoice": true,
+          "amount_within_policy_cap": true,
+          "currency_allowed_by_policy": true,
+          "currency_matches_invoice": true,
+          "payee_allowed_by_policy": true,
+          "payee_matches_invoice": true,
+          "reference_matches_invoice": true
+        },
+        "reason": "INVOICE_LOCKED_REQUIRES_SIGNED_SUPERSESSION"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.277+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "C_UNLOCKED_TWIN_APPROVAL_NO_EXECUTE",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "752e6ba60fc041468d6fe5c2e0a59332",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:49.132+00:00",
+      "test_observation": {
+        "admissibility": "ADMISSIBLE",
+        "approval_status": "APPROVED"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.417+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "E_UNKNOWN_SAME_MISSION_CREATE_REENTRY",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "b2c92ae6666a4ed09e233252fc0557fb",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:49.329+00:00",
+      "test_observation": {
+        "decision": "NOT_DISPATCHED",
+        "original_order_preserved": true
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.580+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "H_LOCKED_INVOICE_REFERENCE_SUBSTITUTION",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "7c1cda4cc05844f99a0e0c2c1d66451b",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:49.471+00:00",
+      "test_observation": {
+        "NOTE": "Refusal reason may be mismatch rather than lock; no escape",
+        "admission": "REJECTED",
+        "reason": "TRUSTED_INVOICE_MISMATCH"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.805+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 1,
+        "requests": 1
+      },
+      "name": "POSITIVE_FIXTURE_RECONCILIATION_GET",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 1,
+        "id": "bc2d790835f14c31a72bfee673a7f35c",
+        "refusals": 0,
+        "requests": 1
+      },
+      "started_utc": "2026-11-02T11:53:49.654+00:00",
+      "test_observation": {
+        "invoice_status": "PAID",
+        "mission_status": "COMPLETED"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:49.986+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "D_PAID_INVOICE_REFUSAL",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "52a0b6f78e0841c8bb485a8d46704211",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:49.895+00:00",
+      "test_observation": {
+        "admission": "REJECTED",
+        "reason": "INVOICE_ALREADY_PAID"
+      },
+      "verdict": "PASS"
+    },
+    {
+      "collector_match": true,
+      "end_confirmed": true,
+      "ended_utc": "2026-11-02T11:53:50.333+00:00",
+      "error": null,
+      "expected_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "requests": 0
+      },
+      "name": "F_CONCURRENT_INVOICE_ADMISSION",
+      "observed_collector": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "040d24646ad741a7859f2aaf7dec1c54",
+        "refusals": 0,
+        "requests": 0
+      },
+      "started_utc": "2026-11-02T11:53:50.095+00:00",
+      "test_observation": {
+        "active_mission_id": "74159b24-fc2c-43b3-a326-e95f722bda14",
+        "invoice_status": "LOCKED",
+        "overlap_ns": 100469200,
+        "threads": [
+          {
+            "end_ns": 1322239658778800,
+            "name": "two",
+            "reason": "MATCHED_TRUSTED_INVOICE_AND_POLICY",
+            "start_ns": 1322239558309600,
+            "status": "ADMITTED"
+          },
+          {
+            "end_ns": 1322239682963800,
+            "name": "one",
+            "reason": "INVOICE_LOCKED_REQUIRES_SIGNED_SUPERSESSION",
+            "start_ns": 1322239535732800,
+            "status": "PROPOSED"
+          }
+        ]
+      },
+      "verdict": "PASS"
+    }
+  ],
+  "classification": "SUPPLEMENTARY_LOCAL_SEPARATE_PROCESS_FIXTURE_EXECUTOR_NOT_QF01",
+  "collector_audit_error": null,
+  "collector_process_pid": 30604,
+  "collector_replay": {
+    "collector_pid": 30604,
+    "events": 40,
+    "head_sha256": "f4504e3b5c5a831bb9c70437430b89963334cab471ce5926718a05c7e54ac6e3",
+    "windows": {
+      "A_INVOICE_MISMATCH": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "5cc8145999a041b18ed88821db5adb52",
+        "refusals": 0,
+        "requests": 0
+      },
+      "B_UNKNOWN_LOCKED_NEW_MISSION": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "b23ba3a498b6422d81b8b0a9000fef5f",
+        "refusals": 0,
+        "requests": 0
+      },
+      "C_UNLOCKED_TWIN_APPROVAL_NO_EXECUTE": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "752e6ba60fc041468d6fe5c2e0a59332",
+        "refusals": 0,
+        "requests": 0
+      },
+      "D_PAID_INVOICE_REFUSAL": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "52a0b6f78e0841c8bb485a8d46704211",
+        "refusals": 0,
+        "requests": 0
+      },
+      "EXECUTOR_INVALID_TOKEN_CONTROL": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "8bef66274965427dba7f9a8caa7b5b3c",
+        "refusals": 1,
+        "requests": 1
+      },
+      "E_UNKNOWN_SAME_MISSION_CREATE_REENTRY": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "b2c92ae6666a4ed09e233252fc0557fb",
+        "refusals": 0,
+        "requests": 0
+      },
+      "F_CONCURRENT_INVOICE_ADMISSION": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "040d24646ad741a7859f2aaf7dec1c54",
+        "refusals": 0,
+        "requests": 0
+      },
+      "H_LOCKED_INVOICE_REFERENCE_SUBSTITUTION": {
+        "capture": 0,
+        "create": 0,
+        "get": 0,
+        "id": "7c1cda4cc05844f99a0e0c2c1d66451b",
+        "refusals": 0,
+        "requests": 0
+      },
+      "POSITIVE_FIXTURE_ORIGINAL_CAPTURE_LOST": {
+        "capture": 1,
+        "create": 1,
+        "get": 1,
+        "id": "f8c21e3d7254460eb2157ee5d4f869ed",
+        "refusals": 0,
+        "requests": 3
+      },
+      "POSITIVE_FIXTURE_RECONCILIATION_GET": {
+        "capture": 0,
+        "create": 0,
+        "get": 1,
+        "id": "bc2d790835f14c31a72bfee673a7f35c",
+        "refusals": 0,
+        "requests": 1
+      }
+    }
+  },
+  "complete": true,
+  "failure": null,
+  "fixture_effects": "one simulated CREATE and CAPTURE in memory, not PayPal",
+  "gate_process_pid": 23432,
+  "limitation": "Separate process, same host/OS account; test-only synthetic provider. Python outbound guard is not OS isolation. No production Executor CLI or PayPal network path.",
+  "paypal_access": "PROHIBITED_NOT_ATTEMPTED",
+  "qf01_full_B_verdict": "INCONCLUSIVE_approval_and_other_nonlock_predicates_not_fully_proven",
+  "qf01_historical_verdict": "INCONCLUSIVE_UNCHANGED",
+  "real_paypal_executor_evidence": "NOT_ESTABLISHED",
+  "recorded_at": "2026-11-02T11:53:50.379+00:00",
+  "result": "SUPPLEMENTARY_LOCAL_INTEGRATED_PASS",
+  "source_modified": false
+}

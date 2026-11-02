@@ -1,0 +1,8 @@
+{
+  "amount": "1.00",
+  "currency": "USD",
+  "invoice_id": "qf01-trusted-invoice-001",
+  "merchant_id": "sandbox-merchant",
+  "operation": "PAYPAL_CAPTURE_ORDER",
+  "reference": "qf01-merchant-invoice-001"
+}

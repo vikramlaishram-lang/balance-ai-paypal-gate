@@ -1,0 +1,43 @@
+{
+  "candidate": "Balance-Gate-PayPal-Hackathon-Candidate-v0.2",
+  "candidate_kind": "SEPARATE_HACKATHON_MILESTONE",
+  "paypal_mode": "SANDBOX_ONLY",
+  "paid_model_api_calls_required": 0,
+  "local_model_api_calls_for_live_demo": 1,
+  "ai_runtime": "LOCAL_QWEN3_8B_PURE_PROPOSE_READONLY_INSPECT_TYPED_RECOMMEND_VIA_STDIO_MCP",
+  "authority_runtime": "GATE_POLICY_SIGNED_ACT_DIGEST_ATOMIC_BARRIERS_SHORT_LIVED_REQUEST_BOUND_TOKENS",
+  "secret_holder": "SEPARATE_LOOPBACK_EXECUTOR_PROCESS_SANDBOX_ONLY",
+  "trusted_host_assumption": true,
+  "real_money_transactions_allowed": false,
+  "t5_comparative_trials": "NOT_RUN",
+  "hackathon_fixture_contrast": "20_CASE_4_FAULT_DETERMINISTIC_MODEL_NOT_PAYPAL_EVIDENCE_NOT_T5",
+  "reference_inputs_read_only": [
+    "Balance_Productization_Blueprint_v0.1_2026-10-25.md",
+    "balance-api-v0.2.openapi.yaml",
+    "Balance_Contract_to_Test_Conformance_Matrix_v0.1_2026-10-25.md",
+    "Balance_P1_Contract_Closure_Matrix_v0.2_2026-10-25.md",
+    "BALANCE_P1_SPEC_FREEZE_v0.2.json",
+    "Balance_P1_Approval_and_Freeze_Record_v0.2_2026-10-25.md"
+  ],
+  "preserved": {
+    "CANDIDATE01": "UNCHANGED",
+    "QUAL01": "UNCHANGED",
+    "E01_v0.1": "UNCHANGED",
+    "H02": "UNCHANGED",
+    "T4": "UNCHANGED"
+  },
+  "claims": {
+    "automated_tests": "27_CURRENT_ARCHITECTURE_DETERMINISTIC_TESTS_NO_NETWORK",
+    "restart_demo_runner": "ONE_COMMAND_TWO_GATE_PROCESSES_SAME_SQLITE_RETRY_REFUSED_ORIGINAL_ORDER_RECONCILED",
+    "fixture_contrast_result": "NAIVE_DUPLICATED_20_OF_20_GOVERNED_DUPLICATED_0_OF_20",
+    "typed_mcp_transport": "ACTUAL_LOCAL_STDIO_PROCESS_TESTED_WITH_FIXTURE_MODEL_OUTPUT",
+    "mutation_suite": "REFERENCE_PASSES_4_OF_4_BROKEN_VARIANTS_KILLED_4_OF_4",
+    "paypal_read_only_observer": "NOT_ESTABLISHED_SHARED_REST_CREDENTIAL_CAPABILITY",
+    "off_host_anchor": "SUPPORTED_BY_EXTERNAL_SINK_PATH_NOT_CLAIMED_UNLESS_SEPARATELY_CONTROLLED",
+    "ollama_live_run_during_build": "VERIFIED_QWEN3_8B_PROPOSAL_AND_RECONCILE_RECOMMENDATION_2026_10_25",
+    "paypal_live_sandbox_run_during_build": "VERIFIED_ORDER_AND_CAPTURE_IDENTIFIERS_REDACTED_FROM_PUBLIC_COPY",
+    "live_evidence_file": "LIVE_SANDBOX_EVIDENCE.json",
+    "balance_product_contract_qualification": "NOT_CLAIMED"
+  }
+}
+
