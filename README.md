@@ -34,6 +34,7 @@ The collector and Executor in the local v0.5.1 evidence are separate processes u
 Requirements: Python 3.11+; no third-party packages, PayPal credentials, buyer approval, `.env`, or external network access are required.
 
 ```powershell
+Set-Location <path-to-cloned-repository>
 python -B run_tests.py
 ```
 
@@ -42,11 +43,13 @@ Expected result for this snapshot: **42 tests, all passing**.
 To reproduce the observed-Executor fixture exercise in a fresh output directory:
 
 ```powershell
-python -B tests\run_observed_offline.py --out out\observed-evidence
-python -B tests\audit_observation.py --out out\observed-evidence
+python -B tests\run_observed_offline.py --out "$PWD\out\observed-evidence"
+python -B tests\audit_observation.py --out "$PWD\out\observed-evidence"
 ```
 
 This starts loopback-only local services and injects `FixturePayPalSandbox`. It does not load PayPal credentials or instantiate the real PayPal client. Do **not** run `executor_cli.py` for the fixture demonstration.
+
+For a clean-clone sequence, expected results, output files, and explicit claim boundaries, see [`JUDGE_QUICK_START.md`](JUDGE_QUICK_START.md).
 
 ## Evidence by version
 

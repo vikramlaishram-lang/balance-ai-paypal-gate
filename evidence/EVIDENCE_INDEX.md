@@ -4,9 +4,9 @@ This index separates versions and experiment types. Results from different versi
 
 | Artifact | Version | Experiment type | Test date | Result | Public-copy SHA-256 | Qualification limitations |
 | --- | --- | --- | --- | --- | --- | --- |
-| `v0.3-retained-sandbox/LIVE_SANDBOX_EVIDENCE.json` | v0.3-era retained milestone (file labels candidate v0.2) | PayPal Sandbox restart/reconcile record | 2026-10-25 | Historical run recorded as completed | `B1F20547E63DB7C02616B307F1A96BA0EB1CE3A9AF6A71996CB76A7320C93ED6` | Sanitized public copy; supports the earlier recovery story only; not v0.5/v0.5.1 qualification |
-| `v0.3-retained-sandbox/VERIFICATION_REPORT.md` | v0.3-era retained milestone | Deterministic suite, restart runner, and historical Sandbox narrative | 2026-10-25 | 27/27 deterministic tests reported; Sandbox run described | `A4C3A6F646546D91F5678F57532D960596A273B1ED875456DFC28DC58B23763F` | Historical report; identifiers redacted; broader claims must remain version-scoped |
-| `v0.3-retained-sandbox/CANDIDATE_BOUNDARY.json` | v0.3-era retained milestone | Candidate boundary | 2026-10-25 | Boundary recorded | `07953266DBAC9231ACA972FB5F1DBE5B8D1B945F2FAFBB1B129D9D002AFD586B` | Public copy redacts order/capture identifiers |
+| `v0.3-retained-sandbox/LIVE_SANDBOX_EVIDENCE.json` | v0.3-era retained milestone (file labels candidate v0.2) | PayPal Sandbox restart/reconcile record | 2026-10-25 | Historical run recorded as completed | `BBA7023A5CFAE6EBF476F07B690D9B11E45E2F085B6F7702DC0E65B9160C6DD3` | Sanitized public copy; supports the earlier recovery story only; not v0.5/v0.5.1 qualification |
+| `v0.3-retained-sandbox/VERIFICATION_REPORT.md` | v0.3-era retained milestone | Deterministic suite, restart runner, and historical Sandbox narrative | 2026-10-25 | 27/27 deterministic tests reported; Sandbox run described | `F613E76C1BA6F6B64F4501AFE276A9FE0B25F66659791FC71574698A2136DC01` | Historical report; identifiers redacted; broader claims must remain version-scoped |
+| `v0.3-retained-sandbox/CANDIDATE_BOUNDARY.json` | v0.3-era retained milestone | Candidate boundary | 2026-10-25 | Boundary recorded | `CA2EEBE5D5EC63CE66B4C2AA8157DDBC4EEBE94E6A89B2E5D6C531B7CDBEA778` | Public copy redacts order/capture identifiers |
 | `v0.5-frozen/integrated-fixture/local_integrated_report.json` | v0.5 frozen | Separate-process fictional fixture integration | 2026-11-02 | 10/10 windows PASS | `BF31CB0A22A754BAA42F2C634CF2433AC0991B628BC0799C1FB87ECAB34698D9` | Synthetic provider; same host/account; not production Executor CLI or PayPal network evidence; full B predicate remains incomplete |
 | `v0.5-frozen/integrated-fixture/fixture_executor_events.jsonl` | v0.5 frozen | Window-scoped fixture Executor log | 2026-11-02 | One fictional CREATE, one CAPTURE, two GET dispatches; negative windows zero | `D6E7BE271D13FE5D666099F0434A38A221CEFEFCBF52C20D6A2CBB89BCAC7A16` | Independent local fixture logging, not independent PayPal-provider evidence |
 | `v0.5-frozen/supplementary-scripted/diagnostic_report.json` | v0.5 frozen | Scripted unauthorized-proposal diagnostic | 2026-11-02 | 10/10 rejected | `C692E04D3AD8742181A1023107F613A275B52D532F5D92335CA6CE0EBA36D90F` | Gate-only synthetic observer; no provider dispatch authority; local path redacted |
@@ -28,8 +28,12 @@ This index separates versions and experiment types. Results from different versi
 
 | Artifact | Original SHA-256 | Public-copy SHA-256 | Transformation |
 | --- | --- | --- | --- |
-| `LIVE_SANDBOX_EVIDENCE.json` | `7FF6AA55715346AA4B4494BD063232CF50EAFE06EC93A3F7731993753056A22D` | `B1F20547E63DB7C02616B307F1A96BA0EB1CE3A9AF6A71996CB76A7320C93ED6` | Mission, order, and capture identifiers replaced with explicit redaction markers |
-| `VERIFICATION_REPORT.md` | `834DDCD9C92B8609D50FAC47B740112DE13D86461570F95AC89BFDC829A9B732` | `A4C3A6F646546D91F5678F57532D960596A273B1ED875456DFC28DC58B23763F` | Order and capture identifiers removed from the historical narrative |
-| `CANDIDATE_BOUNDARY.json` | `901A0FDAA8A1E77EDC39DD52C5E54A435A49A056ED680C73859834D2D4022DCF` | `07953266DBAC9231ACA972FB5F1DBE5B8D1B945F2FAFBB1B129D9D002AFD586B` | Embedded order/capture claim string replaced with a redaction marker |
+| `LIVE_SANDBOX_EVIDENCE.json` | `7FF6AA55715346AA4B4494BD063232CF50EAFE06EC93A3F7731993753056A22D` | `BBA7023A5CFAE6EBF476F07B690D9B11E45E2F085B6F7702DC0E65B9160C6DD3` | Mission, order, and capture identifiers replaced with explicit redaction markers |
+| `VERIFICATION_REPORT.md` | `834DDCD9C92B8609D50FAC47B740112DE13D86461570F95AC89BFDC829A9B732` | `F613E76C1BA6F6B64F4501AFE276A9FE0B25F66659791FC71574698A2136DC01` | Order and capture identifiers removed from the historical narrative |
+| `CANDIDATE_BOUNDARY.json` | `901A0FDAA8A1E77EDC39DD52C5E54A435A49A056ED680C73859834D2D4022DCF` | `CA2EEBE5D5EC63CE66B4C2AA8157DDBC4EEBE94E6A89B2E5D6C531B7CDBEA778` | Embedded order/capture claim string replaced with a redaction marker |
 
 No raw evidence was edited in place. Originals remain outside this public staging repository.
+
+## Correction history
+
+On 2026-11-04, three previously published public-copy hashes were found not to match the bytes in this repository. The tables above now contain freshly computed SHA-256 values. The erroneous values and the exact correction are preserved in [`HASH_CORRECTION_2026-11-04.md`](HASH_CORRECTION_2026-11-04.md). The affected evidence files were not changed as part of this correction.
