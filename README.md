@@ -2,7 +2,7 @@
 
 Balance AI is a prototype safety layer for AI-initiated PayPal payments. The AI can investigate an invoice and propose an action, but a proposal is not authority. A separate Gate admits only actions that match a Gate-owned trusted invoice and policy, verifies approval over the exact action, commits durable barriers before dispatch, and reconciles uncertain outcomes against the original provider order.
 
-This repository is a public-staging snapshot of the **v0.5.1 Executor-observation development candidate**. It includes the frozen v0.5 test corpus for provenance. It is not production-ready, does not authorize a payment, and has not completed credential-bearing v0.5.1 live qualification. Historical QF-01 remains **INCONCLUSIVE**.
+This repository is the judge-facing source snapshot of the **v0.5.2 demo-orchestration development candidate**, derived from the published v0.5.1 Executor-observation candidate. It includes the frozen v0.5 test corpus for provenance. It is not production-ready, does not authorize a payment, and has not completed credential-bearing v0.5.2 live qualification. Historical QF-01 remains **INCONCLUSIVE**.
 
 ## Why this exists
 
@@ -40,6 +40,15 @@ python -B run_tests.py
 
 Expected result for this snapshot: **42 tests, all passing**.
 
+To exercise the v0.5.2 collector lifecycle and effect-free negative matrix:
+
+```powershell
+python -B demo_orchestrator.py effect-free-preflight --output-dir "$PWD\out\v052-preflight"
+python -B tests\run_v052_effect_free.py --out "$PWD\out\v052-matrix"
+```
+
+These commands do not load PayPal credentials, run model inference, request buyer approval, or permit payment dispatch.
+
 To reproduce the observed-Executor fixture exercise in a fresh output directory:
 
 ```powershell
@@ -58,8 +67,9 @@ For a clean-clone sequence, expected results, output files, and explicit claim b
 | v0.3 retained milestone | Sanitized record of a 25 Oct 2026 PayPal Sandbox restart/reconcile run | Historical Sandbox behavior for the earlier recovery design | v0.5 security behavior or v0.5/v0.5.1 live qualification |
 | v0.5 frozen candidate | Pinned 48-file source identity; scripted/model diagnostics; integrated fictional fixture logs | Local refusal, lock, re-entry, concurrency, and fixture reconciliation behavior | Full QF-01; independent credential-bearing Executor evidence |
 | v0.5.1 development candidate | 42 regression tests and four observed local fixture windows | Production handler path with injected fictional provider and separate collector process | Real PayPal egress, credential-bearing live qualification, protected independent custody |
+| v0.5.2 demo-orchestration candidate | Collector-lifecycle wrapper, effect-free Executor preflight, replay audit, and 11-case negative matrix | Local orchestration and fail-closed behavior without payment effects | Live PayPal execution, independent OS-enforced custody, production readiness, or QF-01 PASS |
 
-See [`evidence/EVIDENCE_INDEX.md`](evidence/EVIDENCE_INDEX.md) for artifact-level hashes, provenance, and limitations.
+See [`evidence/EVIDENCE_INDEX.md`](evidence/EVIDENCE_INDEX.md) for artifact-level hashes, provenance, and limitations. [`PUBLICATION_PROVENANCE.md`](PUBLICATION_PROVENANCE.md) maps the v0.5.2 executable additions byte-for-byte to the separately frozen recording candidate.
 
 ## Demonstration story
 
@@ -74,12 +84,12 @@ The intended order is:
 7. restart the Gate;
 8. reconcile the original order and mark the invoice paid only from provider evidence.
 
-No v0.5 live footage is included. Any future demo must use full uncut evidence separately from an edited approximately 2:45 video, with cuts and speed changes visibly labelled. The retained v0.3 run may be used only as a clearly labelled fallback with narrower claims.
+The Route B demonstration uses genuine local `qwen3:8b` inference and current-build fictional-provider execution. It is not live PayPal footage. Full uncut evidence remains separate from the edited submission video, and any cuts or speed changes must be visibly labelled. The retained v0.3 Sandbox run may be used only as clearly labelled historical evidence with narrower claims.
 
 ## Qualification and safety limits
 
 - QF-01 remains **INCONCLUSIVE**; historical evidence is not reinterpreted.
-- v0.5.1 is a separate, unqualified development candidate.
+- v0.5.2 is a separate, unqualified development candidate derived from v0.5.1.
 - Local fixture tests are not PayPal-provider evidence.
 - Process separation on one user account is not strong isolation.
 - A dispatch-begin log does not prove the provider completed an effect.

@@ -1,0 +1,15 @@
+{
+  "act_digest": "f1b041c4193d7ae5d93e684e1825f669ff7565c8ee7435fd168a571ffa5fef69",
+  "agent_model": "qwen3:8b",
+  "agent_provider": "OLLAMA_LOCAL",
+  "amount": "1.00",
+  "authority": "NONE",
+  "currency": "USD",
+  "description": "Proposed payment for fictional PayPal Sandbox demonstration",
+  "effect": "NONE",
+  "payee_id": "DEMO-MERCHANT",
+  "prompt_digest": "c892f50325391a690c89042d377cf51faf9222d85a4ec92188c302e2653e9962",
+  "rationale": "This is a proposal only and grants no execution authority.",
+  "reference": "route-b-2026-11-04",
+  "request_key": "route-b-recording-20261104"
+}

@@ -1,0 +1,34 @@
+{
+  "verified_utc": "2026-11-04T08:18:00Z",
+  "result": "PASS",
+  "scope": "actual-local-qwen3-inference-and-fictional-provider-execution",
+  "candidate": {
+    "version": "v0.5.2-demo-orchestration",
+    "tree_sha256": "7b7fd99e049fa26970e0753960098cf39fa484a1076acf20ec02c1bf2a61f5e5",
+    "manifest_files_checked": 93,
+    "identity_pass": true
+  },
+  "execution": {
+    "record_result": "PASS",
+    "qwen3_8b_inference": "PASS",
+    "fictional_provider_fixture": "PASS",
+    "paypal_api_calls": 0,
+    "payment_authorized": false,
+    "qf01": "INCONCLUSIVE"
+  },
+  "normalized_video": {
+    "file": "BALANCE_ROUTE_B_ACTUAL_EXECUTION_UNCUT_1080P.mp4",
+    "sha256": "D3D89AF41C7C710A29411850B53A801F17ED7C6161ED970B57F7F5E91F970956",
+    "bytes": 3197346,
+    "duration_seconds": 57.87,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "decoded_frames": 1736,
+    "every_frame_decode": "PASS",
+    "audio": false,
+    "transformation": "top-aligned 14-pixel crop and constant-frame-rate normalization; no timeline cut or speed change"
+  },
+  "historical_paypal_evidence_used": false,
+  "live_paypal_operation": false
+}

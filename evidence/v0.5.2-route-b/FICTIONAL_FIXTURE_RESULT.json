@@ -1,0 +1,31 @@
+{
+  "classification": "DETERMINISTIC_RESTART_DEMO_NO_NETWORK_NOT_LIVE_PAYPAL_OR_MODEL",
+  "before_restart": {
+    "buyer_approval": "SIMULATED_FIXTURE",
+    "capture_attempted": true,
+    "gate_process_id": 44164,
+    "mission_id": "4543f9e4-3e2e-4f12-bfc7-6a9215648261",
+    "paypal_order_id": "FIXTURE-ORDER-0001",
+    "proposal_authority": "NONE",
+    "proposal_effect": "NONE",
+    "status_after_dropped_confirmation": "OUTCOME_UNKNOWN"
+  },
+  "after_restart": {
+    "capture_dispatch_events": 1,
+    "final_status": "COMPLETED",
+    "gate_process_id": 5324,
+    "mission_id": "4543f9e4-3e2e-4f12-bfc7-6a9215648261",
+    "paypal_order_id": "FIXTURE-ORDER-0001",
+    "retry_dispatch": "NOT_DISPATCHED",
+    "verification": {
+      "anchor_matches": true,
+      "chain_valid": true,
+      "event_count": 14
+    }
+  },
+  "restart": {
+    "different_process": true,
+    "same_mission": true,
+    "same_order": true
+  }
+}

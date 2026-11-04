@@ -1,0 +1,8 @@
+{
+  "base_commit": "e1ca697ae0e943755a3711993d87906176fdb381",
+  "base_tree": "62d861857df16b6dd291febeb6c32aaa65ea3588",
+  "candidate_version": "v0.5.2-demo-orchestration",
+  "historical_qf_01": "INCONCLUSIVE",
+  "scope": "collector lifecycle orchestration and effect-free qualification",
+  "live_payment_authorized": false
+}
